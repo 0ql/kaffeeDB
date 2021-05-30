@@ -1,0 +1,34 @@
+{
+  "tables": [
+    {
+      "name": "test",
+      "columns": [
+        {
+          "name": "id",
+          "sqltype": "integer",
+          "accessible": false
+        },
+        {
+          "name": "a",
+          "sqltype": "text",
+          "accessible": true,
+          "validation": {
+            "type": "string",
+            "maxLen": 100,
+            "minLen": 3
+          }
+        },
+        {
+          "name": "b",
+          "sqltype": "integer",
+          "accessible": true,
+          "validation": {
+            "type": "number",
+            "max": 200,
+            "min": 0
+          }
+        }
+      ]
+    }
+  ]
+}
